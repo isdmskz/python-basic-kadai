@@ -1,16 +1,18 @@
 class Human:
 
-  def __init__(self, name, age):
+  def __init__(self):
+    self.name = ""
+    self.age = ""
+
+  def setinfo(self, name, age):
     self.name = name
     self.age = age
 
-  def setinfo(self, name):  # これ必要？
-    self.name = name
-
-  def printinfo(self):  # これ必要？
+  def printinfo(self):
     print(self.name)
+    print(self.age)
 
-ishida = Human("Masa Ishida",48)
+masa = Human()
 
-print(ishida.name)
-print(ishida.age)
+masa.setinfo("Masakazu Ishida", 48)
+masa.printinfo()
